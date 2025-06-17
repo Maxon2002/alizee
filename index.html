@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alizee menu</title>
+  <link rel="icon" href="Images/favicon-alizee.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Images/favicon-alizee.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+
+
+  <div class="preloader">
+    <img src="Images/alizee-logo.png" alt="Restaurant Logo" class="preloader-logo" />
+  </div>
+
+
+  <header class="site-header">
+    <div><img src="images/alizee-logo.png" alt="logo of restaurant" class="logo"></div>
+    <h3 class="menu-type">À la carte</h3>
+  </header>
+
+  <div class="left-line"></div>
+  <div class="right-line"></div>
+
+
+
+  <div class="navigation-container">
+    <!-- Категории -->
+    <div class="nav-categories">
+      <button class="category-btn active" data-target="starters">Starters</button>
+      <button class="category-btn" data-target="main-courses">Main Courses</button>
+      <button class="category-btn" data-target="side-dishes">Side Dishes</button>
+    </div>
+
+    <!-- Подкатегории -->
+    <div class="nav-subcategories-wrapper">
+      <div class="nav-subcategories active" data-category="starters">
+        <button class="subcategory-btn active" data-target="seafood">Seafood</button>
+        <button class="subcategory-btn" data-target="salads">Salads</button>
+        <button class="subcategory-btn" data-target="cold-starters">Cold Starters</button>
+        <button class="subcategory-btn" data-target="hot-starters">Hot Starters</button>
+      </div>
+      <div class="nav-subcategories" data-category="main-courses">
+        <button class="subcategory-btn active" data-target="from-the-farm">From the Farm</button>
+        <button class="subcategory-btn" data-target="from-the-sea">From the Sea</button>
+        <button class="subcategory-btn" data-target="pasta">Pasta</button>
+      </div>
+      <div class="nav-subcategories" data-category="side-dishes">
+        <!-- <button class="subcategory-btn hidden" data-target="pasta">Side Dishes</button> -->
+        <!-- Пусто -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="category-section" id="starters">
+    <h2 class="main-category-title">Starters</h2>
+
+
+    <div class="subcategory-section" id="seafood">
+      <h3 class="subcategory-title">Seafood</h3>
+      <div class="container">
+        <div class="dish-card" data-images='["images/gillardeau.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/gillardeau.jpg" alt="Gillardeau Oyesters n.2" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Gillardeau Oyesters n.2</h4>
+              <p class="dish-short">French oyesters (3pcs), shallot vinegar, condiments</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Plump and meaty, with a rich, sweet, nutty flavor and delicate mineral notes — Gillardeau oysters are
+              cultivated in the Marennes-Oléron region on the western coast of France and are considered among the
+              finest
+              in
+              the world. Their taste is clean and balanced, without sharp salinity, and the texture is firm yet silky —
+              each
+              oyster melts gently on the palate.
+              <br><br>
+              We serve the oysters chilled on ice, carefully opened and retaining their natural brine. Accompaniments
+              include a wedge of lemon, shallot red wine vinegar sauce, rye bread, and salted butter — all chosen to
+              highlight the oysters’ natural depth and complexity.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/seafood-tower-picture.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/seafood-tower-picture.jpg" alt="Alizée Seafood Platter" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Alizée Seafood Platter</h4>
+              <p class="dish-short">Canadian lobster, crevettes bouquet, mussel, seabass crudo, tuna tartare, Gillardeau
+                oyster n.2, rye bread, mayonnaise, condiments</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The pure essence of the sea in every detail — the Alizée platter is a carefully curated, seasonal
+              selection by our chef, focused on balance, texture, and flavor. It features plump Canadian lobster, sweet
+              crevettes bouquet, tender mussels, delicate seabass crudo, rich tuna tartare, and the renowned Gillardeau
+              oyster No. 2, known for its meaty texture and subtle nutty finish.
+              <br><br>
+              Served over crushed ice to preserve perfect freshness, the platter comes with rye bread, creamy
+              mayonnaise, shallot red wine vinegar, a miniature bottle of Tabasco, and other condiments designed to
+              enhance every bite.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/caviar-lianozoff.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/caviar-lianozoff.jpg" alt="Caviar Lianozoff" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Caviar Lianozoff</h4>
+              <p class="dish-short">(50g) served with traditional accompaniments & blinis</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Elegant simplicity and timeless indulgence. Caviar Lianozoff is one of the finest varieties, prized for
+              its refined salinity, rich depth of flavor, and smooth, melt-in-the-mouth texture. A luxurious appetizer
+              that brings a sense of celebration from the very first spoonful.
+              <br><br>
+              We serve 50 grams of caviar with traditional accompaniments: warm blinis, sour cream, chopped egg, and
+              onion — allowing you to enjoy it the classic way, where every element enhances the delicacy’s subtlety.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/dibba.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/dibba.jpg" alt="Dibba Bay Oysters No.3" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Dibba Bay Oysters No.3</h4>
+              <p class="dish-short">Dibba Bay oyster (3 pcs), shallot vinegar, condiments</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy, firm, and remarkably clean in flavor — Dibba Bay oysters are harvested from the crystal-clear
+              waters of the Gulf of Oman, off the coast of Dibba (UAE). Their taste strikes a delicate balance between
+              light brininess and a subtle hint of sweetness, with a texture that is both plump and tender.
+              <br><br>
+              We serve three oysters chilled on ice, accompanied by shallot red wine vinegar, rye bread, and classic
+              condiments — all chosen to highlight the natural freshness and refined character of this exceptional
+              shellfish.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/regal-oysters.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/regal-oysters.jpg" alt="Regal Royal Gold Oyster No.3" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Regal Royal Gold Oyster No.3</h4>
+              <p class="dish-short">6 oysters from Famille Boutrais, Cancale, France</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Refined from the very first glance — Regal Royal Gold oysters from Cancale, France, impress with their
+              striking golden shells and rich, elegant flavor. Their flesh is plump and juicy, offering a delicate
+              balance of fresh salinity and subtle sweetness, characteristic of France’s finest oyster terroirs.
+              <br><br>
+              We serve six oysters chilled on ice, carefully opened with their natural liquor preserved. Accompanied by
+              shallot red wine vinegar, rye bread, and classic condiments — all chosen to enhance the oyster’s natural
+              finesse.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subcategory-section" id="salads">
+      <h3 class="subcategory-title">Salads</h3>
+      <div class="container">
+        <div class="dish-card" data-images='["images/burrata-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/burrata-salad.jpg" alt="Burrata and Tomatoes" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Burrata and Tomatoes</h4>
+              <p class="dish-short">Burrata, heirloom cherry tomato, balsamic cream, confit tomato</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The delicate burrata, with its thin outer layer and creamy, flowing center, offers a rich, velvety texture
+              perfectly paired with bright tomatoes—ranging from sweet cherry to deeply flavored confit varieties. The
+              taste reveals freshness, creaminess, and a slight tang, enriched by the aroma of basil oil and the gentle
+              spiciness of freshly ground pepper.
+              <br><br>
+              The classic presentation features burrata served alongside seasonal tomatoes, garnished with balsamic
+              cream, salt flakes, and tomato powder, making every bite a simple yet perfect expression of Italy’s
+              flavors.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/caeser-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/caeser-salad.jpg" alt="Caesar Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Caesar Salad</h4>
+              <p class="dish-short">Caesar salad, parmesan, romaine lettuce, anchovy, lemon, garlic, croutons</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Classic in every crunch: Caesar salad combines crisp romaine leaves with the savory tang of anchovies and
+              the vibrant zest of lemon. Each bite reveals a harmony of garlic aroma, creamy Parmesan, and crunchy
+              croutons that add textural contrast.
+              <br><br>
+              The preparation involves a traditional dressing made from olive oil, lemon juice, garlic, Dijon mustard,
+              Worcestershire sauce, and anchovies, turning the salad into a true celebration of flavor.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/nicoise-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/nicoise-salad.jpg" alt="Nicoise Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Nicoise Salad</h4>
+              <p class="dish-short">Confit tuna, anchovy, gem lettuce, olive, potato, green bean</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              A fresh and vibrant taste of summer in every forkful — Nicoise salad pairs tender tuna confit with the
+              bright saltiness of anchovies, crunchy green beans, and soft potatoes. Lettuce, olives, and fresh
+              vegetables create a light yet satisfying composition, perfect for warm days.
+              <br><br>
+              This classic dish, originating from the French city of Nice in the 19th century, is celebrated for its
+              freshness and simplicity, making it a true symbol of Mediterranean cuisine.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/lentil-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/lentil-salad.jpg" alt="Puy Lentil Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Puy Lentil Salad</h4>
+              <p class="dish-short">Lentils, cucumber, tomato, parsley, French dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              This Puy lentil salad is a burst of flavors and textures: firm, slightly nutty lentils combine with the
+              freshness of cucumber and the sweetness of tomatoes, while the aroma of parsley adds a bright green note.
+              Originating from France, Puy is a region known for its distinctive lentils prized for their rich taste and
+              resilient texture.
+              <br><br>
+              The preparation is simple and natural: lentils are cooked to tender firmness, then mixed with chopped
+              fresh vegetables and parsley. Everything is dressed with a classic French dressing infused with garlic and
+              mustard, giving the salad a piquant and vibrant finish.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/kale-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/kale-salad.jpg" alt="Kale and Avocado Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Kale and Avocado Salad</h4>
+              <p class="dish-short">Kale, avocado, cucumber, orange, pomegranate dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Sesame">SS</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Fresh, vibrant, and full of character — the Kale and Avocado Salad is a play of textures and balanced
+              flavors. Crisp kale leaves, creamy avocado slices, juicy orange segments, and the refreshing tang of
+              pomegranate dressing come together in a light yet satisfying combination. It's a wholesome option that
+              doesn’t compromise on taste — every ingredient contributes to a sense of balance and energy.
+              <br><br>
+              The preparation begins by marinating the kale in the pomegranate dressing to soften its texture and
+              enhance its flavor. The salad is then gently assembled: avocado slices, orange segments, and pomegranate
+              seeds are added with care to create both visual harmony and a layered, refreshing taste.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/alizee-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/alizee-salad.jpg" alt="Alizée Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Alizée Salad</h4>
+              <p class="dish-short">Marinated prawn, octopus, calamari, asparagus, avocado, heirloom tomato, herbs,
+                rosemary dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Seafood">S</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The freshness of the sea meets the richness of the earth in the Alizée Salad. Juicy prawns, tender
+              octopus, and calamari bring a distinct ocean flavor, complemented by the creaminess of avocado, the
+              sweetness of heirloom tomatoes, and the light crunch of asparagus. Fragrant herbs and subtle woody notes
+              of rosemary round out the profile. The result is a salad that’s both light and satisfying — a perfect
+              balance of taste and nourishment.
+              <br><br>
+              The seafood is marinated in advance to enhance its flavor and tenderness, then gently combined with
+              vegetables and fresh herbs. Just before serving, everything is dressed with a rosemary vinaigrette that
+              ties the components into a vibrant and harmonious composition.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/endive-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/endive-salad.jpg" alt="Endive and Roquefort Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Endive and Roquefort Salad</h4>
+              <p class="dish-short">Endive salad, blue cheese, green apple, walnut, honey mustard dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Nuts">N</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Crisp, refreshing, yet rich — the endive and Roquefort salad plays on contrasts. The slight bitterness of
+              endive pairs perfectly with the creamy sharpness of blue cheese, the sweetness of green apple, and the
+              caramelized crunch of walnuts. Each element enhances the next, creating a harmony of flavors and textures
+              — from bright and fresh to deep and tangy.
+              <br><br>
+              The salad is composed of fresh endive, thinly sliced apples, crumbled Roquefort, and toasted walnuts. It’s
+              dressed with a honey mustard vinaigrette that brings everything together into a simple yet impressive
+              dish.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subcategory-section" id="cold-starters">
+      <h3 class="subcategory-title">Cold Starters</h3>
+      <div class="container">
+        <div class="dish-card" data-images='["images/beef-tartare-after.jpg", "images/beef-tartare-before.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/beef-tartare-after.jpg" alt="Beef Tartare" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Beef Tartare</h4>
+              <p class="dish-short">Angus beef tartare, gherkin, shallot, parsley, mustard, toasted bread</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Raw meat as a culinary art form — beef tartare reveals the full depth of marbled Angus beef in its purest,
+              most refined expression. Silky and cool, with bright notes of gherkins, shallots, and tangy mustard, each
+              bite strikes a perfect balance between rich umami and refreshing acidity. The contrast of textures —
+              tender beef against the crunch of toasted bread and fresh herbs — creates an elegant and memorable
+              experience.
+              <br><br>
+              We prepare our tartare by hand, using finely chopped premium Angus beef mixed with capers, gherkins,
+              shallots, parsley, and Dijon mustard. It’s served with crispy toasted bread so you can build the perfect
+              bite — bold, savory, and delicately seasoned.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/beef-carpaccio.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/beef-carpaccio.jpg" alt="Beef Carpaccio with Truffle" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Beef Carpaccio with Truffle</h4>
+              <p class="dish-short">Angus beef, black truffle, parmesan, rocket, shallot</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Raw">R</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Translucent slices of marbled Angus beef melt in the mouth, revealing the delicate taste of raw meat
+              enriched by the earthy depth of black truffle. The peppery bite of arugula, the richness of Parmesan, and
+              the gentle sweetness of shallot complete the dish with refined balance. This elegant appetizer celebrates
+              the natural luxury of its ingredients.
+              <br><br>
+              We serve the beef carpaccio in ultra-thin slices, arranged in a single layer and topped with fresh
+              arugula, shaved Parmesan, and slices of black truffle. Just before serving, it is drizzled with truffle
+              dressing to enhance the aroma and elevate the flavor of every element.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/beetroot-tartare.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/beetroot-tartare.jpg" alt="Beetroot Tartare" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Beetroot Tartare</h4>
+              <p class="dish-short">Red beetroot confit with rosemary, baby gem lettuce, mustard, horseradish</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy roasted beetroot tartare is a harmony of earthy flavor, subtle sweetness, and piquant sharpness. The
+              warm aroma of rosemary, the freshness of lettuce, and the spicy kick of horseradish create a vibrant,
+              memorable taste where every spoonful reveals the natural richness of beetroot. This dish surprises with
+              its depth and refined vegan simplicity.
+              <br><br>
+              The beetroot is roasted with rosemary until tender, then finely chopped and mixed with tangy mustard,
+              freshly grated horseradish, and a light lemon dressing. Served with baby gem lettuce and crispy quinoa, it
+              offers a textural contrast that highlights how simple ingredients can become a true culinary pleasure.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/marinated-prawns.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/marinated-prawns.jpg" alt="Marinated Prawns" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Marinated Prawns</h4>
+              <p class="dish-short">Lemon-marinated prawns, extra virgin olive oil, basil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Plump, tender prawns with a light citrusy aroma and the delicate sweetness of the ocean — this dish is all
+              about pure, clean flavors. The subtle hint of basil and the richness of extra virgin olive oil enhance the
+              natural taste of premium Indian Ocean prawns, creating a bright and refreshing appetizer that feels both
+              elegant and effortless.
+              <br><br>
+              U15 prawns are gently poached and then marinated in fresh lemon juice and sea salt to preserve their
+              texture and flavor. Just before serving, they’re drizzled with basil-infused olive oil for a fragrant
+              finish that brings out every nuance of this refined dish.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/tuna-tartare.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/tuna-tartare.jpg" alt="Tuna Tartare" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Tuna Tartare</h4>
+              <p class="dish-short">Yellowfin tuna tartare, avocado, extra virgin olive oil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The juicy, velvety texture of fresh tuna combined with the creamy softness of avocado is a classic that
+              needs no embellishment. This dish delivers the pure taste of fresh seafood, enhanced by a light citrus
+              tang and the subtle aroma of extra virgin olive oil.
+              <br><br>
+              The tuna tartare is handmade from carefully selected yellowfin tuna fillet. The finely chopped tuna is
+              mixed with ripe avocado cubes, dressed with olive oil and freshly squeezed lemon juice, and served with
+              tender baby gem lettuce leaves — all creating a light and fresh composition that highlights the quality of
+              the ingredients.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/seabass-carpaccio.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/seabass-carpaccio.jpg" alt="Seabass Carpaccio" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Seabass Carpaccio</h4>
+              <p class="dish-short">Seabass, avocado, basil, citrus dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Raw">R</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, almost melting slices of sea bass deliver a refreshing ocean freshness with a subtle brininess and
+              delicate sweetness. Creamy avocado adds softness and a velvety texture, while the citrus tang of lime,
+              orange, and lemon bursts with bright, invigorating notes, creating a perfect balance between freshness and
+              rich flavor.
+              <br><br>
+              The dish is served with carefully arranged slices of sea bass, garnished with segments of lime, orange,
+              and lemon, fresh basil, and creamy avocado flesh. All of this is drizzled with a gentle citrus dressing
+              that enhances the natural flavor of the fish and adds a refreshing citrusy touch.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/marinated-peppers.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/marinated-peppers.jpg" alt="Marinated Peppers" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Marinated Peppers</h4>
+              <p class="dish-short">Smoked and roasted peppers, parsley, olive, caper berries</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, slow-cooked bell peppers reveal a deep smoky aroma and a soft texture that literally melts in your
+              mouth. Their natural sweetness harmonizes with the bright freshness of parsley and the piquancy of olives
+              and caper berries, creating a rich and balanced flavor ensemble.
+              <br><br>
+              The peppers are carefully seasoned with a mixture of parsley, olives, and caper berries, which enhance and
+              highlight their aroma, turning the dish into an exquisite appetizer or side.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/leeks.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/leeks.jpg" alt="Leeks with Vinaigrette" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Leeks with Vinaigrette</h4>
+              <p class="dish-short">Steamed leeks, tangy vinaigrette, butter-fried croutons</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender leeks, slowly cooked with fragrant thyme, reveal a velvety, slightly sweet texture and a delicate
+              herbal bouquet. The tangy vinaigrette adds a bright freshness and gentle piquancy, while buttery, crispy
+              croutons provide a pleasant textural contrast and deepen the flavor.
+              <br><br>
+              The leeks are slow-cooked, then chilled for 12 hours before being served with a classic vinaigrette and
+              buttery croutons — a perfect combination for a light and sophisticated appetizer.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subcategory-section" id="hot-starters">
+      <h3 class="subcategory-title">Hot Starters</h3>
+      <div class="container">
+        <div class="dish-card" data-images='["images/escargots.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/escargots.jpg" alt="Escargots in Herb Butter" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Escargots in Herb Butter</h4>
+              <p class="dish-short">Burgundy snail in garlic herb butter</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender snails cooked in aromatic garlic and parsley butter reveal a rich, full-bodied flavor with subtle
+              herbal notes. The snails have a soft, velvety texture, while the buttery sauce adds an exquisite depth and
+              cozy, savory warmth.
+              <br><br>
+              The snails are simmered in garlic-parsley butter and served with crispy toasted baguette slices — a simple
+              and classic way to enjoy French cuisine as a delectable appetizer.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/mushroom-soup.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/mushroom-soup.jpg" alt="Mushroom Soup" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Mushroom Soup</h4>
+              <p class="dish-short">Mushroom soup, truffle foam, chervil, croutons</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Rich, velvety, and comforting — this mushroom soup reveals the deep, woody notes of wild mushrooms,
+              enhanced by a creamy base and a subtle earthiness. A delicate truffle foam adds a refined aroma, while
+              fresh chervil brings a light herbal touch. Every spoonful offers a harmonious balance of intense flavor,
+              texture, and culinary finesse.
+              <br><br>
+              Wild mushrooms are first sautéed to a golden crisp to unlock their aroma, then gently simmered in a creamy
+              base until tender. The soup is served with airy truffle foam, sautéed mushrooms, and warm brioche croutons
+              that add a satisfying crunch and highlight the dish’s velvety texture.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/tomato-tart.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/tomato-tart.jpg" alt="Tomato Tart" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Tomato Tart</h4>
+              <p class="dish-short">Puff pastry, goat cheese, caramelised onion, basil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy, vibrant, and aromatic — the tomato tart combines crisp puff pastry with the sweetness of
+              caramelized onions and the rich flavor of ripe Roma tomatoes. Creamy goat cheese adds a touch of tang and
+              smooth texture, while fresh basil finishes the dish with a Mediterranean burst of freshness and aroma.
+              <br><br>
+              The base of airy puff pastry is oven-baked with layers of tomato sauce, fresh Roma tomatoes, caramelized
+              onions, and basil. Once baked, the tart is served warm, topped with a generous portion of soft goat cheese
+              that melts slightly from the heat, adding a refined creaminess to every bite.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/mushroom-tart.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/mushroom-tart.jpg" alt="Mushroom and Truffle Tart" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Mushroom and Truffle Tart</h4>
+              <p class="dish-short">Crispy flatbread with Alsatian cream cheese, forest mushrooms, French black truffle
+              </p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Mushroom and truffle tart seduces from the very first bite: the thin, crispy crust melts on the tongue,
+              giving way to the rich flavor of forest mushrooms and a delicate creamy sauce. The subtle aroma of fresh
+              black truffle fills the dish with depth and noble earthiness, while the tender mushroom slices contrast
+              beautifully with the crunchy base, creating a truly gastronomic delight.
+              <br><br>
+              The tart is prepared on a thin layer of crisp pastry with no edges. The base is covered with a velvety
+              crème fraîche sauce, followed by white mushrooms, fresh black truffle, and a touch of fresh chives. Baked
+              to a golden crisp and served hot — as an elegant appetizer or a light main dish.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="category-section" id="main-courses">
+    <h2 class="main-category-title">Main Courses</h2>
+
+
+    <div class="subcategory-section" id="from-the-farm">
+      <h3 class="subcategory-title">From the Farm</h3>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/lamb-chops.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/lamb-chops.jpg" alt="Herb-Crusted Lamb Chops" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Herb-Crusted Lamb Chops</h4>
+              <p class="dish-short">Herb-crusted lamb chops, roasted pumpkin, glazed pearl onions, thyme-infused jus</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy herb-crusted lamb chops strike a perfect balance between the richness of tender pink meat and the
+              freshness of fragrant herbs. The crispy crust gives way to succulent lamb, while the caramelized pearl
+              onions and roasted pumpkin bring sweet, creamy, and slightly smoky notes. A thyme-infused jus ties
+              everything together with a warm, savory finish.
+              <br><br>
+              The chops are seared to a golden crust in a herb coating, then oven-roasted to perfection. Served with
+              roasted pumpkin, glazed pearl onions, and a warm jus infused with thyme, this dish is a comforting yet
+              refined centerpiece.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/veal-milanese.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/veal-milanese.jpg" alt="Veal Milanese" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Veal Milanese</h4>
+              <p class="dish-short">Veal Milanese, breaded veal rack with sage, rocket salad, and veal jus</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Crispy, juicy, and infused with the aroma of sage — Veal Milanese is a Northern Italian classic that
+              instantly whets the appetite. Beneath its golden breadcrumb crust lies tender veal that melts in the
+              mouth. The slight bitterness of arugula and the depth of the meat jus balance the creamy and aromatic
+              notes, creating a harmonious and refined flavor experience.
+              <br><br>
+              A whole cut of veal loin is pounded to the perfect thinness, coated in a sage-infused breadcrumb crust,
+              and pan-fried in butter until golden and crisp. It is served with a fresh arugula salad and a rich veal
+              jus, offering an elegant yet comforting dish.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/cafe-de-paris.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/cafe-de-paris.jpg" alt="Beef Tenderloin 'Café de Paris'" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Beef Tenderloin "Café de Paris"</h4>
+              <p class="dish-short">Beef tenderloin, French fries, peppercorn sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy and rich in peppery flavor, the “Café de Paris” beef tenderloin brings the charm of a classic French
+              bistro to the plate. The tender Australian beef melts in your mouth, while a bold blend of peppers adds
+              intensity and depth.
+              <br><br>
+              The tenderloin is seared in olive oil with a trio of crushed peppers — Szechuan, green, and black —
+              forming a fragrant crust. The pan is then deglazed with a peppercorn sauce to capture every nuance of
+              flavor. The beef is returned to a copper pan, where it's finished with a touch of whipped cream and a
+              sprinkle of pink pepper for an extra kick. Served with crisp, golden French fries, this dish is both
+              elegant and comfortingly familiar.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/baby-chicken.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/baby-chicken.jpg" alt="Spicy Lemon Baby Chicken" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Spicy Lemon Baby Chicken</h4>
+              <p class="dish-short">Baby chicken in lemon and harissa, grilled baby zucchini, bell pepper & cherry
+                tomato compote, chicken jus</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Spicy lemon baby chicken is a bold explosion of flavor where heat meets bright citrus freshness. The
+              tender meat absorbs the warmth of spices, a touch of smokiness, and garlicky depth, delivering a rich and
+              lingering aftertaste.
+              <br><br>
+              The chicken is marinated in harissa paste with lemon juice, garlic, olive oil, and spices, then seared
+              until golden and juicy. It’s served with a thyme-infused chicken jus and accompanied by grilled baby
+              zucchini, sweet bell peppers, and a cherry tomato compote that brings freshness and balance to the plate.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/ribeye.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/ribeye.jpg" alt="Grilled Ribeye Steak" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Grilled Ribeye Steak</h4>
+              <p class="dish-short">Black Angus beef rib-eye, French fries, mixed green salad, Chimichurri & bearnaise
+                sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy, smoky, and deeply flavorful — the ribeye steak is made for those who appreciate rich
+              taste, texture, and true culinary indulgence. With an MB3+ marbling grade, the meat gains exceptional
+              tenderness and richness: the fat slowly melts during grilling, infusing the fibers and enhancing the
+              flavor. From the very first bite, you experience classic meaty juiciness with hints of smoke, black
+              pepper, and olive oil.
+              <br><br>
+              The Black Angus marble beef steak is marinated in olive oil, salt, and freshly ground black pepper, then
+              grilled over charcoal to achieve the perfect crust. Served with refreshing chimichurri sauce, classic
+              Béarnaise sauce, crispy French fries, and a mixed green salad.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/hachis-parmentier.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/hachis-parmentier.jpg" alt="Hachis Parmentier" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Hachis Parmentier</h4>
+              <p class="dish-short">Minced beef, mashed potatoes, gratinated cheese, baby gem salad</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, hearty, and comforting like home cooking, Hachis Parmentier combines the classic flavors of
+              braised minced beef with velvety mashed potatoes and a golden cheese crust. Each bite delivers warmth,
+              richness, and a harmonious blend of textures: the softness of the potatoes, the meaty density, and the
+              appetizing crispness on top.
+              <br><br>
+              The dish is made from braised minced beef, topped with a layer of mashed potatoes and sprinkled with
+              grated cheese, then baked until golden brown. It is served with a light, fresh baby gem lettuce salad that
+              adds brightness and balances the rich flavors of the main dish.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/bayaldi.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/bayaldi.jpg" alt="Vegetable Bayaldi and Pepper Coulis" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Vegetable Bayaldi and Pepper Coulis</h4>
+              <p class="dish-short">Layered Provençal vegetables, yellow pepper coulis, basil oil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, slow-cooked Bayaldi vegetables offer a rich symphony of flavors — the sweetness of caramelized
+              onions and the depth of tomato sauce blend perfectly with the softness of eggplants, zucchini, and
+              peppers. A bright yellow pepper sauce and fragrant basil oil complement the taste, evoking the essence of
+              the Mediterranean.
+              <br><br>
+              The vegetables are thinly sliced and gently stewed with caramelized onions and tomato sauce until tender
+              and aromatic. Served alongside is a fresh rocket salad, adding a crisp and light contrast.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subcategory-section" id="from-the-sea">
+      <h3 class="subcategory-title">From the Sea</h3>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/seabream.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/seabream.jpg" alt="Sea Bream 'Papillote'" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Sea Bream "Papillote"</h4>
+              <p class="dish-short">Mediterranean seabream, potato, tomato, lemon, basil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Sea Bream “en Papillote” is the very embodiment of tenderness and aroma. Baked gently in parchment, the
+              fish slowly steams in its own juices with a touch of olive oil, lemon,
+              tomatoes, and fresh basil — resulting in a delicate, almost ethereal flavor with bright Mediterranean
+              notes. Roasted eggplant brings a velvety texture and a hint of smokiness, while baby potatoes add
+              heartiness to the dish.
+              <br><br>
+              This classic French cooking method preserves the fish’s moisture and allows its full flavor to unfold.
+              Served directly in its parchment “papillote,” the dish arrives fragrant and visually striking.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/mussels.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/mussels.jpg" alt="Mussels Marinière" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Mussels Marinière</h4>
+              <p class="dish-short">Mussels, shallot, Café de Paris butter, French fries</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Mussels marinière reveal the deep taste of the sea, with a tender texture and rich aroma. White wine adds
+              a subtle acidity, shallots bring a touch of sweetness, and the Café de Paris butter — infused with herbs
+              and spices — lends a creamy, gently spiced finish. The combination of briny mussels and velvety sauce
+              delivers a truly gourmet experience.
+              <br><br>
+              The mussels are steamed in white wine with finely chopped shallots until they open fully, then finished
+              with fragrant herb butter that envelops them in richness. Served with crispy French fries — perfect for
+              soaking up every drop of the flavorful sauce.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/grilled-lobster.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/grilled-lobster.jpg" alt="Grilled Lobster" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Grilled Lobster</h4>
+              <p class="dish-short">Grilled Canadian lobster, mixed vegetables, Hollandaise sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Grilled Canadian lobster is a true gastronomic luxury, offering a rich smoky flavor and tender, juicy
+              meat. Cooked on the grill, the lobster retains its natural sweetness while gaining a subtle smoky note
+              that enhances the depth of this seafood delicacy. Eating it straight from the shell is a real pleasure.
+              <br><br>
+              To prepare, the live Canadian lobster is seasoned with salt and pepper, then grilled until it develops a
+              golden crust and a distinctive smoky aroma. It is served with a mix of vegetables and a delicate
+              Hollandaise sauce that perfectly complements the flavors.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/butterflied-seabass.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/butterflied-seabass.jpg" alt="Butterflied Seabass" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Butterflied Seabass</h4>
+              <p class="dish-short">Butterflied seabass, green pesto, black olives, zesty Provençal virgin sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The tender whole seabass, butterflied to reveal its delicate flesh, is enveloped in fragrant green pesto
+              and accented with tangy black olives. A bright and zesty Provençal virgin sauce with subtle citrus notes
+              perfectly complements and enhances the fresh, oceanic flavor of the fish, creating a true harmony on the
+              plate.
+              <br><br>
+              The whole seabass is carefully butterflied to ensure it remains juicy and tender during cooking. It is
+              then dressed with fresh green pesto and black olives, and drizzled with an invigorating Provençal sauce
+              made from olive oil, lemon, and herbs. Served immediately after preparation to preserve its freshness and
+              rich taste.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/tiger-prawns.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/tiger-prawns.jpg" alt="Grilled Tiger Prawns" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Grilled Tiger Prawns</h4>
+              <p class="dish-short">Grilled tiger prawns, dill butter</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tiger prawns have a rich, slightly smoky flavor thanks to a marinade of oil, salt, and pepper and grilling
+              over charcoal. Finished with dill butter, they offer tenderness and a fresh herbal aroma that highlights
+              the natural sweetness of the seafood.
+              <br><br>
+              The prawns are first marinated, then quickly grilled over charcoal to infuse a smoky aroma. After that,
+              they are cooked in the oven for about three minutes under a dill butter sauce. Served with grilled
+              capsicum and lemon to complement the flavors of the dish.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/bouillabaisse.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/bouillabaisse.jpg" alt="Bouillabaisse" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Bouillabaisse</h4>
+              <p class="dish-short">Fish stock, mussel, potato, fennel, orange, saffron aioli, croutons</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Bouillabaisse is a fragrant, deeply flavorful Provençal fish soup where marine and aromatic notes
+              intertwine. The subtle sweetness of fennel, the delicate bitterness of orange, the richness of the fish
+              broth, and a touch of saffron come together to create a warming and gastronomically complex dish. Each
+              spoonful evokes a stroll along the Mediterranean coast.
+              <br><br>
+              This bouillabaisse is made with a rich fish stock, mussels, baby potatoes, fennel, and orange zest. It's
+              served with crispy croutons and saffron aioli, traditionally spread on the bread and dipped into the soup
+              for an authentic taste of Marseille.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/grilled-salmon.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/grilled-salmon.jpg" alt="Grilled Salmon" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Grilled Salmon</h4>
+              <p class="dish-short">Grilled salmon, crushed potatoes, roasted baby leeks, lemon white butter sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Juicy and aromatic, grilled salmon reveals its delicate flavor beneath a light, crispy sear. Its rich
+              texture pairs beautifully with the creamy crushed potatoes and the gentle sweetness of roasted baby leeks.
+              A silky lemon butter sauce adds brightness, wrapping each bite in a soft citrus note.
+              <br><br>
+              The salmon fillet, sourced from the cold waters of Norway, is marinated in olive oil, salt, and pepper,
+              then grilled to a golden crust. A healthy and balanced choice, naturally rich in omega-3 fatty acids.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/seabass-with-caviar.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/seabass-with-caviar.jpg" alt="Pan-seared Seabass with Caviar" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Pan-seared Seabass with Caviar</h4>
+              <p class="dish-short">Pan-seared seabass, celeriac, green asparagus, caviar sauce</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Pan-seared seabass seduces from the very first bite: its crispy golden crust gives way to tender, juicy
+              flesh with a delicate, almost buttery flavor. Subtle oceanic notes are elevated by a rich caviar sauce,
+              lending the dish a briny umami depth. Creamy celeriac adds an earthy smoothness, while green asparagus
+              brings a crisp freshness and a hint of pleasant bitterness.
+              <br><br>
+              The seabass fillet is seared on a hot pan until perfectly golden, then served with a velvety celeriac
+              purée and sautéed green asparagus. A silky caviar-infused sauce finishes the dish, adding refinement and
+              layers of flavor to this elegant plate.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="subcategory-section" id="pasta">
+      <h3 class="subcategory-title">Pasta</h3>
+      <div class="container">
+        <div class="dish-card" data-images='["images/lobster-linguine.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/lobster-linguine.jpg" alt="Lobster Linguine" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Lobster Linguine</h4>
+              <p class="dish-short">Linguine pasta, Canadian lobster, confit cherry tomato, lobster bisque, tarragon</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Delicate pieces of Canadian lobster are paired with silky linguine and a rich lobster bisque. The aroma of
+              tarragon brings a fresh, herbal lift, while the confit cherry tomatoes add a subtle sweetness that
+              enhances the depth and complexity of the dish.
+              <br><br>
+              The sauce is made by simmering lobster shells with vegetables and spices to create an intensely flavored
+              bisque. Fresh tarragon is infused into the sauce, and the lobster meat is gently poached, then reheated in
+              the bisque. The dish is served with linguine and confit cherry tomatoes, offering a perfect balance of
+              marine richness, sweetness, and herbal brightness.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/rigatoni-asparagus.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/rigatoni-asparagus.jpg" alt="Rigatoni with Asparagus and Basil" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Rigatoni with Asparagus and Basil</h4>
+              <p class="dish-short">Rigatoni pasta, green asparagus, parmesan, basil pesto</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Rigatoni with basil and asparagus delights from the very first bite: the warm, creamy-herbal flavor of the
+              pesto coats each piece of pasta, while the tender, slightly sweet asparagus adds a burst of fresh
+              juiciness. Semi-dried cherry tomatoes bring a touch of acidity and depth, turning the dish into a true
+              summer indulgence with a bold Italian spirit.
+              <br><br>
+              The pasta is cooked al dente and sautéed with fresh green asparagus and semi-dried cherry tomatoes. It’s
+              then tossed in a homemade pesto made from basil, garlic, olive oil, and parmesan.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/seafood-rigatoni.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/seafood-rigatoni.jpg" alt="Seafood Rigatoni" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Seafood Rigatoni</h4>
+              <p class="dish-short">Pasta with basil pesto, shrimps, octopus, mussels</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Shellfish">SF</span>,
+              <span class="allergen" data-tooltip="Seafood">S</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Sweet prawns, tender octopus, and juicy mussels pair beautifully with the rich, vibrant pesto sauce. Its
+              creamy texture and herbaceous aroma envelop the pasta, turning every forkful into a gastronomic delight
+              filled with the warmth of the Italian coast.
+              <br><br>
+              Rigatoni pasta is cooked al dente and tossed with a pesto sauce made from basil, olive oil, Parmesan and
+              Pecorino cheeses, pine nuts, and garlic. Grilled seafood — prawns, octopus, and mussels — are added
+              directly into the sauce and served together with the pasta, creating a flavorful and aromatic dish..
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/no-image.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/no-image.jpg" alt="Celeriac Risotto" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Celeriac Risotto</h4>
+              <p class="dish-short">Celeriac risotto, mushroom, asparagus, chervil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Delicate celeriac risotto envelops the palate with its creamy texture and mild, slightly nutty flavor. The
+              gentle sweetness of the celeriac root blends beautifully with juicy wild mushrooms and crisp asparagus
+              stalks, creating a balanced and refined dish with a fresh herbal note from chervil.
+              <br><br>
+              Instead of traditional rice, finely chopped celeriac is slowly simmered in vegetable broth until it
+              reaches a creamy consistency. Sautéed mushrooms, blanched asparagus, and fresh chervil are added at the
+              end to complete the dish.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/pappardelle-beef.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/pappardelle-beef.jpg" alt="Pappardelle with Braised Beef" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Pappardelle with Braised Beef</h4>
+              <p class="dish-short">Pappardelle, slow cooked short rib, tomato, garlic, parsley</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, slow-braised beef short rib melts in the mouth, perfectly paired with wide ribbons of pappardelle
+              that soak up the rich, meaty sauce. The deep, comforting flavor of the beef is lifted by subtle tomato
+              notes and a hint of garlic, while fresh parsley brings brightness and balance to this hearty dish.
+              <br><br>
+              The beef short ribs are slowly braised until the meat becomes fall-apart tender, then shredded and folded
+              into a savory sauce made with tomato, garlic, and herbs. It's served over al dente pappardelle, whose
+              broad shape holds the sauce beautifully. A final touch of fresh parsley adds freshness and rounds out the
+              flavors.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/mushroom-risotto.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/mushroom-risotto.jpg" alt="Mushroom and Truffle Risotto" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Mushroom and Truffle Risotto</h4>
+              <p class="dish-short">Mushroom risotto, fresh truffle, parmesan</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The dish entices with its creamy, velvety texture and rich, deep flavor. Delicate mushroom notes smoothly
+              transition into the exquisite earthiness of fresh truffle, creating a layered aroma that unfolds with
+              every bite. The creamy softness of Parmesan complements the dish, making it truly luxurious and refined.
+              <br><br>
+              The risotto is prepared traditionally: the rice is slowly simmered with onions and white wine, then
+              aromatic mushrooms, herbs, and vegetable broth are added. At the end, butter and Parmesan are stirred in
+              to achieve a silky texture. It is served with thin slices of fresh truffle, which enhance the flavor and
+              make the presentation especially elegant.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/rigatoni-chicken-morels.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/rigatoni-chicken-morels.jpg" alt="Rigatoni with Chicken and Morels" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Rigatoni with Chicken and Morels</h4>
+              <p class="dish-short">Rigatoni pasta, corn-fed chicken, baby spinach, morel mushroom, cream</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Gluten">G</span>
+            </div>
+
+            <p class="dish-full hidden">
+              The tender, creamy sauce coats the rigatoni, unveiling the deep, slightly nutty flavor of rare morel
+              mushrooms. Juicy pieces of chicken add heartiness, while fresh spinach brings brightness and lightness.
+              <br><br>
+              The sauce is made from morels, shallots, garlic, chicken broth, and cream, combining to create a rich and
+              velvety flavor. The pasta is cooked al dente, then tossed with the sauce, chicken, and spinach. Finally,
+              the dish is garnished with fresh herbs and thin shavings of Parmesan for extra aroma and texture.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="category-section" id="side-dishes">
+    <h2 class="main-category-title">Side Dishes</h2>
+    <div class="subcategory-section" id="side-dishes">
+      <div class="container">
+        <div class="dish-card" data-images='["images/steamed-rice.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/steamed-rice.jpg" alt="Steamed Rice" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Steamed Rice</h4>
+              <p class="dish-short">Steamed rice</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Steamed white rice is light and fluffy, perfectly complementing any main dish with its neutral flavor and
+              soft texture — a simple side that enhances rather than overpowers the other elements on your plate.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/green-salad.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/green-salad.jpg" alt="Green Salad" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Green Salad</h4>
+              <p class="dish-short">Mixed salad, tomato, onion, balsamic dressing</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Fresh mixed greens with crisp leaves, juicy tomatoes, and a subtle sharpness from onions, all brought
+              together by a delicate balsamic dressing — a refreshing side that adds brightness and lightness to any
+              meal.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/french-fries.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/french-fries.jpg" alt="French Fries" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">French Fries</h4>
+              <p class="dish-short">French Fries</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Gluten">G</span>,
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Golden, crispy French fries with a soft, tender interior — a classic side that perfectly complements any
+              main course with its rich flavor and satisfying texture.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/truffle-mash-potato.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/truffle-mash-potato.jpg" alt="Truffle Mash Potato" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Truffle Mash Potato</h4>
+              <p class="dish-short">Truffle mash potatoes</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Smooth, velvety mashed potatoes infused with the subtle aroma of truffle paste — a luxurious side dish
+              that adds elegance and depth of flavor to any meal.
+
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/sauteed-potatoes.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/sauteed-potatoes.jpg" alt="Sautéed Potatoes" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Sautéed Potatoes</h4>
+              <p class="dish-short">Sautéed potatoes, shallot, herbs</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Dairy">D</span>,
+              <span class="allergen" data-tooltip="Vegetarian">V</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender, golden baby potatoes with a subtle aroma of shallots and fresh herbs — an appetizing side dish
+              with a soft texture and delicate flavor.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="dish-card" data-images='["images/ratatouille.jpg"]'>
+
+          <div class="dish-main">
+            <img src="images/ratatouille.jpg" alt="Ratatouille" class="dish-image">
+
+            <div class="dish-text">
+              <h4 class="dish-name">Ratatouille</h4>
+              <p class="dish-short">Vegetable, tomato sauce, basil</p>
+            </div>
+          </div>
+
+          <div class="dish-footer">
+            <hr class="dish-separator">
+
+            <div class="dish-allergens hidden">
+              <span class="allergen" data-tooltip="Vegan">VG</span>
+            </div>
+
+            <p class="dish-full hidden">
+              Tender stewed vegetables — eggplant, onion, peppers, tomatoes, and zucchini — infused with the aroma of
+              olive oil and fresh tomato sauce. The flavor is rich, with a mild sweetness and herbal notes of basil,
+              creating a harmonious and vibrant Mediterranean dish. A perfect accompaniment to any meal.
+            </p>
+            <button class="dish-button">More details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="image-overlay hidden">
+    <div class="overlay-content">
+      <span class="close-overlay">&times;</span>
+      <button class="nav-button prev-button">&#10094;</button>
+      <div class="overlay-image-wrapper">
+        <!-- <img src="" alt="Dish image" class="overlay-image"> -->
+        <div class="carousel-container">
+          <div class="carousel-track"></div>
+        </div>
+        <h2 class="overlay-dish-name"></h2>
+      </div>
+      <button class="nav-button next-button">&#10095;</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

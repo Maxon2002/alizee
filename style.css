@@ -1,0 +1,742 @@
+@font-face {
+  font-family: "Resolve Light";
+  src: url(fonts/Resolve-Light.otf);
+}
+
+@font-face {
+  font-family: "Cabrion Light";
+  src: url(fonts/Cabrion-Light.otf);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+
+  /* background-color: #f9f9f9;  */
+  background-color: #fff;
+
+  /*  */
+  /* overflow: hidden; */
+}
+
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  /* transition: opacity 0.8s ease, visibility 0.8s ease; */
+  overflow: hidden;
+  transition: none;
+
+}
+
+.preloader.hidden {
+  animation: fadeOutScreen 0.6s ease forwards;
+}
+
+@keyframes fadeOutScreen {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+.preloader-logo {
+  width: 120px;
+  height: auto;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.preloader.hidden .preloader-logo {
+  animation: logoFlyUp 0.7s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoFlyUp {
+
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-40vh);
+    /* летит высоко */
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-40vh);
+    /* остаётся там */
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+.left-line {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  height: 100%;
+  width: 20px;
+  background-color: #EDC5AA;
+}
+
+.right-line {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+  height: 100%;
+  width: 20px;
+  background-color: #EDC5AA;
+}
+
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  /*f9f9f9*/
+  border-bottom: 1px solid #3c3c3c;
+  /*353535*/
+  padding: 15px 0px 0px 0px;
+
+  /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+
+
+/* Логотип */
+.logo {
+  /* max-height: 40px; */
+  height: 40px;
+  /* width: auto; */
+}
+
+.menu-type {
+  font-style: italic;
+  margin: 9px;
+  font-family: "Resolve Light";
+}
+
+
+/* навигация по категориям */
+
+.navigation-container {
+
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-categories {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.nav-categories,
+.nav-subcategories {
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 5px auto;
+}
+
+.category-btn {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.subcategory-btn {
+
+  font-size: 0.9rem;
+  /* font-size: 14px */
+}
+
+/* .subcategory-btn.hidden {
+  opacity: 0 !important
+} */
+
+.category-btn,
+.subcategory-btn {
+  font-family: "Resolve Light";
+  font-weight: 600;
+  padding: 10px 12px;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.category-btn.active,
+.subcategory-btn.active {
+  background-color: #EDC5AA;
+  color: #333;
+}
+
+
+
+
+
+
+
+.nav-subcategories-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-height: 100px;
+  display: flex;
+  /* justify-content: center; */
+
+  /*  */
+  /* min-height: 40px; */
+  transition: max-height 0.4s ease
+}
+
+.nav-subcategories-wrapper.hidden {
+  max-height: 0px
+}
+
+
+.subcategory-section {
+  margin: 0px 0px 50px 0px;
+}
+
+/*  */
+
+
+.nav-subcategories {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-subcategories.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Анимация появления кнопок */
+.subcategory-btn {
+  opacity: 0;
+  transform: translateY(-10px);
+  /* 10px */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Активные кнопки будут анимироваться */
+.subcategory-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-category-title {
+  font-family: "Resolve Light";
+  margin: 20px 0px 18px 0px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subcategory-title {
+  font-family: "Resolve Light";
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0px;
+  color: #555;
+}
+
+/* .main-category-title,
+.subcategory-title {
+  scroll-margin-top: 120px; 
+} */
+
+
+/* карточка блюда */
+.container {
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 18px 0 40px 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.dish-card {
+  font-family: "Cabrion Light";
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 2px solid #ccc;  /* #3c3c3c */
+  border-bottom: 2px solid #ccc;
+  /* border-radius: 16px; */
+  overflow: hidden;
+  /* margin: 15px; */
+  padding: 15px 15px 10px 15px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); */
+  width: 100%;
+  max-width: 750px;
+  box-sizing: border-box;
+  /* важно для padding */
+
+}
+
+/* Верхняя часть: фото + текст */
+.dish-main {
+  display: flex;
+  align-items: center;
+}
+
+/* Фото */
+.dish-image {
+  width: 30%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  border-radius: 12px;
+
+  cursor: pointer;
+  /* height: 100px; */
+}
+
+
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.pulse-shadow {
+  animation: pulse-shadow 0.8s ease-out 0s 3;
+}
+
+/* Текст справа */
+.dish-text {
+  flex: 1;
+  padding-left: 15px;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.dish-name {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.dish-short {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 6px 0 0 0;
+}
+
+/* Нижняя часть: разделитель и кнопка */
+.dish-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 12px; */
+}
+
+.dish-separator {
+  width: 90%;
+  border: none;
+  border-top: 1px solid #ccc;
+  /* margin-bottom: 8px; */
+  margin: 10px 0px 5px 0px;
+}
+
+.dish-button {
+  /* margin-top: 5px; */
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 5px;
+}
+
+/* .dish-button:hover {
+  color: #777;
+  background: none;
+} */
+
+.dish-footer.expanded .dish-button {
+
+  color: #777;
+}
+
+.dish-allergens {
+  font-size: 0.75rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 0px;
+  /* text-decoration: underline; */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.3s ease, margin-bottom 0.2s ease;
+}
+
+.dish-footer.expanded .dish-allergens {
+  opacity: 1;
+  max-height: 40px;
+  margin-bottom: 8px;
+  /* или auto, если хочешь, чтобы росло динамически */
+}
+
+/* расшифровка аллергий */
+
+.allergen {
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 4px;
+  position: relative;
+}
+
+.tooltip-box {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.dish-full {
+  font-size: 0.95rem;
+  color: #333;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  margin: 0;
+  /* margin-top: 10px; */
+}
+
+.dish-footer.expanded .dish-full {
+  max-height: 350px;
+  /* Достаточно большое значение для текста */
+  opacity: 1;
+  /* margin-top: 10px; */
+}
+
+/* раскрытие изображения */
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay.hidden {
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-content {
+  position: relative;
+  width: 275px;
+  max-height: 80%;
+}
+
+.overlay-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #EDC5AA;
+}
+
+.overlay-dish-name {
+  font-family: "Resolve Light";
+  color: #333;
+  font-size: 1.2em;
+  margin: 10px 0px 0px 0px;
+}
+
+/* .overlay-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-image.fade-out {
+  opacity: 0;
+} */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.carousel-track img {
+  width: 255px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+
+
+.close-overlay {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 6px;
+  user-select: none;
+}
+
+.prev-button {
+  left: -35px;
+}
+
+.next-button {
+  right: -35px;
+}
+
+
+
+
+/* Для мобильных экранов — уменьшаем отступ стрелок */
+
+
+@media (max-width: 380px) {
+
+  .category-btn {
+    font-size: 0.9rem;
+  }
+
+  .category-btn,
+  .subcategory-btn {
+    padding: 10px 10px;
+  }
+
+  .dish-name {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 34px;
+  }
+
+  .site-header {
+    padding: 12px 0px 0px 0px;
+  }
+
+
+
+
+  .bon-appetit {
+    font-style: italic;
+    margin: 7px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .nav-button {
+    font-size: 1.8rem;
+    padding: 0 6px;
+  }
+
+  .prev-button {
+    left: -30px;
+  }
+
+  .next-button {
+    right: -30px;
+  }
+} */
+
+
+@media (min-width: 768px) {
+  .category-btn {
+    font-size: 1.2rem
+  }
+
+  .subcategory-btn {
+    font-size: 1.1rem
+  }
+
+  .dish-name {
+    font-size: 1.3rem;
+  }
+
+  .dish-short {
+    font-size: 1rem;
+  }
+
+  .overlay-content {
+    width: 305px;
+  }
+
+  .carousel-track img {
+    width: 285px;
+  }
+
+  .nav-button {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .prev-button {
+    left: -40px;
+  }
+
+  .next-button {
+    right: -40px;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  .overlay-content {
+    width: 325px;
+  }
+
+  .carousel-track img {
+    width: 305px;
+  }
+
+  .nav-button {
+    font-size: 2.3rem;
+    /* padding: 0 12px; */
+  }
+
+  .prev-button {
+    left: -45px;
+  }
+
+  .next-button {
+    right: -45px;
+  }
+}
