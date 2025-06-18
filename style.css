@@ -506,7 +506,7 @@ body {
 }
 
 .dish-footer.expanded .dish-full {
-  max-height: 350px;
+  max-height: 400px;
   /* Достаточно большое значение для текста */
   opacity: 1;
   /* margin-top: 10px; */
