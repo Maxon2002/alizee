@@ -181,12 +181,12 @@ body {
 
 .category-btn {
   margin-bottom: 10px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .subcategory-btn {
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   /* font-size: 14px */
 }
 
@@ -198,7 +198,7 @@ body {
 .subcategory-btn {
   font-family: "Resolve Light";
   font-weight: 600;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border: none;
   background-color: #eee;
   color: #333;
@@ -453,7 +453,7 @@ body {
 }
 
 .dish-allergens {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #555;
   text-align: center;
   margin-bottom: 0px;
