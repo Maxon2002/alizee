@@ -430,7 +430,8 @@ body {
 }
 
 .dish-button {
-  /* margin-top: 5px; */
+  -webkit-tap-highlight-color: transparent; /* Убирает серую подсветку при тапе */
+  touch-action: manipulation; /* Улучшает отклик при касании */
   font-size: 0.9rem;
   background: none;
   border: none;
@@ -440,13 +441,7 @@ body {
   color: #000;
 }
 
-/* .dish-button:hover {
-  color: #777;
-  background: none;
-} */
-
 .dish-footer.expanded .dish-button {
-
   color: #777;
 }
 
