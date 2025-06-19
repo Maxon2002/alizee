@@ -529,7 +529,7 @@ body {
 
 .overlay-content {
   position: relative;
-  width: 275px;
+  width: 295px;
   max-height: 80%;
 }
 
@@ -538,7 +538,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding: 8px 8px 10px 8px;
   border-radius: 10px;
   background-color: #EDC5AA;
 }
@@ -576,7 +576,7 @@ body {
 }
 
 .carousel-track img {
-  width: 255px;
+  width: 279px;
   height: auto;
   border-radius: 10px;
   flex-shrink: 0;
@@ -649,9 +649,16 @@ body {
   }
 
 
+  .overlay-content {
+  width: 275px;
+  }
+
+  .carousel-track img {
+  width: 259px;
+}
 
 
-  .bon-appetit {
+  .menu-type {
     font-style: italic;
     margin: 7px;
   }
@@ -680,7 +687,7 @@ body {
   }
 
   .carousel-track img {
-    width: 285px;
+    width: 289px;
   }
 
   .nav-button {
@@ -705,7 +712,7 @@ body {
   }
 
   .carousel-track img {
-    width: 305px;
+    width: 309px;
   }
 
   .nav-button {
