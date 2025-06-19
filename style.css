@@ -34,22 +34,17 @@ body {
   justify-content: center;
   z-index: 9999;
 
-  /* transition: opacity 0.8s ease, visibility 0.8s ease; */
+  transition: opacity 0.6s ease, visibility 0.6s ease;
   overflow: hidden;
-  transition: none;
+  
 
 }
 
 .preloader.hidden {
-  animation: fadeOutScreen 0.6s ease forwards;
+  opacity: 0;
+  visibility: hidden;
 }
 
-@keyframes fadeOutScreen {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 
 
 
@@ -59,9 +54,7 @@ body {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-.preloader.hidden .preloader-logo {
-  animation: logoFlyUp 0.7s ease forwards;
-}
+
 
 @keyframes fadeInUp {
   from {
@@ -75,25 +68,6 @@ body {
   }
 }
 
-@keyframes logoFlyUp {
-
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  80% {
-    transform: translateY(-40vh);
-    /* летит высоко */
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translateY(-40vh);
-    /* остаётся там */
-    opacity: 0;
-  }
-}
 
 
 
