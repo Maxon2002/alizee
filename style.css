@@ -381,7 +381,7 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   50% {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   100% {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -389,7 +389,7 @@ body {
 }
 
 .pulse-shadow {
-  animation: pulse-shadow 0.8s ease-out 0s 3;
+  animation: pulse-shadow 0.6s ease-out 0s 3;
 }
 
 /* Текст справа */
