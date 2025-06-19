@@ -22,7 +22,7 @@ document.querySelectorAll('.dish-button').forEach(button => {
         // Удаляем класс после завершения анимации, чтобы можно было повторить
         setTimeout(() => {
           dishImage.classList.remove('pulse-shadow');
-        }, 2200); // чуть больше, чем длительность анимации
+        }, 2000); // чуть больше, чем длительность анимации
       }, 2500);
     }
   });
